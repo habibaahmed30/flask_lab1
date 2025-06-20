@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Details</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .job-detail { margin: 20px 0; padding: 20px; border: 1px solid #ddd; }
+        .job-title { font-size: 24px; color: #333; }
+        .company { font-size: 18px; color: #666; }
+        .location { color: #888; }
+    </style>
+</head>
+<body>
+    <div class="job-detail">
+        <h1 class="job-title">{{ job.title }}</h1>
+        <h2 class="company">{{ job.company }}</h2>
+        <p class="location">{{ job.location }}</p>
+    </div>
+    <a href="/jobs/list">Back to all jobs</a>
+</body>
+</html>
